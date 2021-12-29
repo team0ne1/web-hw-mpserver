@@ -39,4 +39,85 @@
 
 
 
-接口文档之后再补
+## 接口文档
+
+api 接口:
+
+`POST` register：注册
+
+```
+/users/register
+```
+
+Body:
+
+```json
+{
+    "newUser":{
+        "uName":"user1",
+        "uPasswd":"123"
+    }
+}
+```
+
+
+
+`POST` login：登陆
+
+```
+/users/login
+```
+
+Body:
+
+```json
+{
+    "uName":"user1",
+    "uPasswd":"123"
+}
+```
+
+
+
+`GET` getNews：获取已发布信息
+
+```
+/news/getNews                                      //获取所有文章
+/news/getNews?id=bf4a0bf261c9c91a00ddb08012de686e  //通过文章id获取指定文章
+```
+
+
+
+`POST` addNews：发布信息
+
+```
+/news/addNews
+```
+
+Body:
+```json
+{
+    "title":"计算机视觉与深度学习",
+    "author":"teamone",
+    "content":"人工智能..."
+}
+```
+
+
+
+`POST` addCom：添加评论
+
+```
+/news/addCom
+```
+
+Body:
+
+```json
+{
+    "_id":"bf4a0bf261c9c91a00ddb08012de686e",
+    "user_name":"user1",
+    "cm_content": "这里是评论1"
+}
+```
+
