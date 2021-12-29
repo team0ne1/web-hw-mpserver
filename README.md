@@ -115,9 +115,9 @@ Body:
 
 ```json
 {
-    "_id":"bf4a0bf261c9c91a00ddb08012de686e",
-    "user_name":"user1",
-    "cm_content": "这里是评论1"
+    "_id":"bf4a0bf261c9c91a00ddb08012de686e",
+    "user_name":"user1",
+    "cm_content":"这里是评论1"
 }
 ```
 
